@@ -23,12 +23,14 @@ DROP TABLE IF EXISTS `scores`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `scores` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id_score` int NOT NULL AUTO_INCREMENT,
+  `id_student` int NOT NULL,
   `math_score` float DEFAULT NULL,
   `phy_score` float DEFAULT NULL,
   `chem_score` float DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  CONSTRAINT `scores_ibfk_1` FOREIGN KEY (`id`) REFERENCES `students` (`id`)
+  PRIMARY KEY (`id_score`),
+  KEY `id_student` (`id_student`),
+  CONSTRAINT `scores_ibfk_1` FOREIGN KEY (`id_student`) REFERENCES `students` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -50,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-14  9:20:34
+-- Dump completed on 2021-07-14  9:38:56
