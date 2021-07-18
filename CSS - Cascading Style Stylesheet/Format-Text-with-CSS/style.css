@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: monospace, sans-serif;
+}
+
+.container{
+    width: 1100px;
+    margin: 10px auto;
+}
+.title{
+    margin-bottom: 10px; 
+}
+.content{
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.table-contents{
+    width: max-content;
+    border: 1px solid red;
+    padding: 5px;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+.content{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.part-content {
+    
+}
+
+.part-content h3 {
+    text-align: center;
+}
+
+img {
+    width: 720px;
+    height: 1280px;
+    margin-left: 290px;
+}
