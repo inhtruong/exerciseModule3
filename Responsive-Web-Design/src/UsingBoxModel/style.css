@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.main-container {
+    width: 800px;
+    padding: 20px;
+    border: 10px;
+    border-color: chartreuse aqua blue blueviolet;
+    border-style: solid;
+    margin: 10px auto;
+}
+
+.content {
+    width: 700px;
+    margin: 10px auto;
+    border: 3px;
+    border-color: red;
+    border-style: dotted;
+    padding: 10px 10px;
+}
+
+
