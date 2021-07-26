@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h4 {
+    padding: 20px 10px;
+}
+
+.gallery > .h6,.note {
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+a img {
+    /*width: 100%;*/
+    border: 1px solid #ccc;
+}
+
+a img:hover {
+    border: 1px solid black;
+}
+
+p {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+p:hover {
+    border: 1px solid black;
+}
+
+
+/*@media only screen and (min-width: 500px) and (max-width: 700px) {*/
+/*    .row {*/
+/*        width: 50%;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (min-width: 300px) and (max-width: 501px) {*/
+/*    .row {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
