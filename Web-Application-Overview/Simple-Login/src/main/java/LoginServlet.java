@@ -4,7 +4,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "LoginServlet", value = "/login")
+@WebServlet(name = "LoginServlet", urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -19,11 +19,13 @@ public class LoginServlet extends HttpServlet {
         PrintWriter writer = response.getWriter();
         writer.println("<html>");
 
-        if("admin".equals(username) && "admin".equals(password)) {
+        if ("admin".equals(username) && "admin".equals(password)) {
             writer.println("<h1>Welcome " + username + " to website</h1>");
         } else {
             writer.println("<h1>Login Error</h1>");
         }
+
         writer.println("</html>");
+
     }
 }

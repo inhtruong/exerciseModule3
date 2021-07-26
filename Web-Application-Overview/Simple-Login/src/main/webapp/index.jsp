@@ -9,6 +9,7 @@
 <html>
   <head>
     <title>Login</title>
+
     <style type="text/css">
       .login {
         height:180px; width:230px;
@@ -20,6 +21,7 @@
         padding:5px; margin:5px
       }
     </style>
+
   </head>
   <body>
   <form method="post" action="/login">
